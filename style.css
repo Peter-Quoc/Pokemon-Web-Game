@@ -144,7 +144,3 @@ body {
 .stats .PokemonLevel:before {
     content: "LVL: "
 }
-
-.stats .PokemonLevel {
-    float: right;
-}
