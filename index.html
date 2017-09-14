@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <head>
     <title> Pokemon </title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <script> type="text/javascript" src="./index.js"> </script>
+    <script type="text/javascript" src="./index.js"> </script>
 </head>
 <div class="game">
     <div class="opponent">
@@ -13,13 +16,15 @@
                     <div class="pokeball"></div>
                     <div class="pokeball"></div>
                     <div class="pokeball"></div>
+                    <div class="pokeball"></div>
+                    <div class="pokeball"></div>
                 </div>
                 <div id="opHP" class="hp-count"> 100 </div>
             </div>
             <span class="PokemonName"> Charizard </span>
             <span class"PokemonLevel"> LVL: 100 </span>
         </div>
-        <img class="pokemon" src="http://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif" alt="A Spirit of Charizard">
+        <img id="Charizard" class="pokemon" src="http://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif" alt="A Spirit of Charizard">
     </div>
     <div class="player">
         <div class="stats">
@@ -29,13 +34,15 @@
                     <div class="pokeball"></div>
                     <div class="pokeball"></div>
                     <div class="pokeball"></div>
+                    <div class="pokeball"></div>
+                    <div class="pokeball"></div>
                 </div>
                 <div id="myHP" class="hp-count"> 100 </div>
             </div>
             <span class="PokemonName"> Blastoise </span>
-            <span class"PokemonLevel"> LVL: 100 </span>
+            <span class"PokemonLevel"> 100 </span>
         </div>
-        <img class="pokemon" src="http://bit.ly/blastoisegif" alt="A Spirit of Blastoise">
+        <img id="Blastoise" class="pokemon" src="http://bit.ly/blastoisegif" alt="A Spirit of Blastoise">
     </div>
 </div>
 <div class="box">
@@ -43,9 +50,9 @@
         What should Blastoise do?
     </div>
     <div class="action">
-        <button onClick=""> Water Cannon </button>
-        <button onClick=""> Water Pulse </button>
-        <button onClick=""> Surf </button>
-        <button onClick=""> Hydro Pump </button>
+        <button onclick = "waterCannon()">  Water Cannon </button>
+        <button onclick = "Hypnosis()"> Hypnosis </button>
+        <button onclick = "surf()"> Surf </button>
+        <button onclick = "hydroPump()"> Hydro Pump </button>
     </div>
 </div>          
